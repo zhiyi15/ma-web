@@ -5,13 +5,14 @@ import Team from './components/Team'
 import Features from './components/Features'
 import Download from './components/Download'
 import Footer from './components/Footer'
+import { Link } from 'react-scroll/modules'
 
 const navigation = [
-  { name: 'Features', href: '#' },
-  { name: 'Download', href: '#' },
-  { name: 'Team', href: '#' },
+  { name: 'Features', to: 'features', offset: 0 },
+  { name: 'Download', to: 'downloads', offset: 0 },
+  { name: 'Team', to:'team', offset: 95 },
 ]
-
+  // < Link to = 'team' smooth = { true} offset = { 75} > Test</Link>
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -44,9 +45,10 @@ export default function Home() {
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                <Link key={item.name} to={item.to} offset={item.offset} smooth={true} className="text-sm font-semibold leading-6 text-gray-900">
                   {item.name}
-                </a>
+                </Link>
+                
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end" />
@@ -57,6 +59,7 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Middle-Aware</span>
+                  
                   <img
                     className="h-10 w-auto"
                     src="./logo.svg"
@@ -151,9 +154,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Features />
-      <Download />
-      <Team />
+      <div id='features'>
+        <Features />
+      </div>
+      <div id='downloads'>
+        <Download />
+      </div>
+      <div id='team'>
+        <Team />
+      </div>
       <Footer />
     </>
   )
