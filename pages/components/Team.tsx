@@ -17,8 +17,8 @@ const people = [
     name: 'Zhiyi Huang',
     role: 'Full Stack Engineer',
     imageUrl: './zhiyi.png',
-    linkedinUrl: '',
-    githubUrl: '',
+    linkedinUrl: 'http://www.linkedin.com/in/zhyhuang',
+    githubUrl: 'https://github.com/zhiyi15',
   },
   {
     name: 'Tim Chang',
