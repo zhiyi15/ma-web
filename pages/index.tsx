@@ -10,9 +10,9 @@ import { Link } from 'react-scroll/modules'
 const navigation = [
   { name: 'Features', to: 'features', offset: 0 },
   { name: 'Download', to: 'downloads', offset: 0 },
-  { name: 'Team', to:'team', offset: 95 },
+  { name: 'Team', to: 'team', offset: 95 },
 ]
-  // < Link to = 'team' smooth = { true} offset = { 75} > Test</Link>
+// < Link to = 'team' smooth = { true} offset = { 75} > Test</Link>
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -42,16 +42,23 @@ export default function Home() {
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
+
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               {navigation.map((item) => (
                 <Link key={item.name} to={item.to} offset={item.offset} smooth={true} className="text-sm font-semibold leading-6 text-gray-900">
                   {item.name}
                 </Link>
-                
+
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end" />
+            {/* Fork me on github */}
+            <div className='absolute top-0 right-0'>
+              <a href="https://github.com/oslabs-beta/middle-aware">
+                <img decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" />
+              </a>
+            </div>
           </nav>
           <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
             <div className="fixed inset-0 z-50" />
@@ -59,7 +66,7 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Middle-Aware</span>
-                  
+
                   <img
                     className="h-10 w-auto"
                     src="./logo.svg"
@@ -118,12 +125,13 @@ export default function Home() {
                   A tool to  gain insights into clients request to endpoints and the data's path through express middleware.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="downloads"
+                    smooth={true}
                     className="rounded-md bg-[#06d6a0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#06d69ec9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="mt-16 flow-root sm:mt-24">
