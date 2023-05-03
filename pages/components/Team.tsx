@@ -12,8 +12,8 @@ const people = [
     name: 'Jason Breen',
     role: 'Full Stack Engineer',
     imageUrl: './jason.png',
-    linkedinUrl: '',
-    githubUrl: '',
+    linkedinUrl: 'https://linkedin.com/in/jasonbreen/',
+    githubUrl: 'https://github.com/jason-breen',
   },
   {
     name: 'Zhiyi Huang',
@@ -25,16 +25,16 @@ const people = [
   {
     name: 'Tim Chang',
     role: 'Full Stack Engineer',
-    imageUrl: './tim.png',
-    linkedinUrl: '',
-    githubUrl: '',
+    imageUrl: './tim.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/timchang87/',
+    githubUrl: 'https://github.com/timchang87',
   },
   {
     name: 'Justin Marchant',
     role: 'Full Stack Engineer',
     imageUrl: './justin.png',
-    linkedinUrl: '',
-    githubUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/justinwmarchant/',
+    githubUrl: 'https://github.com/justinwmarchant',
   },
  
   

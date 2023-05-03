@@ -6,6 +6,7 @@ import Features from './components/Features'
 import Download from './components/Download'
 import Footer from './components/Footer'
 import { Link } from 'react-scroll/modules'
+import { AiFillGithub } from 'react-icons/ai'
 
 const navigation = [
   { name: 'Features', to: 'features', offset: 0 },
@@ -72,6 +73,7 @@ export default function Home() {
                     src="./logo.svg"
                     alt="Logo"
                   />
+                   
                 </a>
                 <button
                   type="button"
@@ -81,6 +83,7 @@ export default function Home() {
                   <span className="sr-only">Close menu</span>
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
+                
               </div>
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
@@ -93,11 +96,14 @@ export default function Home() {
                       >
                         {item.name}
                       </Link>
-                      
                     ))}
                   </div>
-
+                  <a href="https://github.com/oslabs-beta/middle-aware" className="text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Twitter</span>
+                    <AiFillGithub size={40} />
+                  </a>
                 </div>
+             
               </div>
             </Dialog.Panel>
           </Dialog>
