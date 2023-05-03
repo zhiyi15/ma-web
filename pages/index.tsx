@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Download', to: 'downloads', offset: 0 },
   { name: 'Team', to: 'team', offset: 95 },
 ]
-// < Link to = 'team' smooth = { true} offset = { 75} > Test</Link>
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end" />
             {/* Fork me on github */}
-            <div className='absolute top-0 right-0'>
+            <div className='hidden lg:block lg:absolute lg:top-0 lg:right-0'>
               <a href="https://github.com/oslabs-beta/middle-aware">
                 <img decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" />
               </a>
@@ -93,6 +93,7 @@ export default function Home() {
                       >
                         {item.name}
                       </Link>
+                      
                     ))}
                   </div>
 
