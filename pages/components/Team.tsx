@@ -62,13 +62,13 @@ export default function Team() {
               <p className="text-base leading-7 text-gray-600">{person.role}</p>
               <ul role="list" className="mt-6 flex gap-x-6">
                 <li>
-                  <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
+                  <a href={person.linkedinUrl} target='_blank' className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">LinkedIn</span>
                     <AiFillLinkedin size={20}/>
                   </a>
                 </li>
                 <li>
-                  <a href={person.githubUrl} className="text-gray-400 hover:text-gray-500">
+                  <a href={person.githubUrl} target='_blank' className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Twitter</span>
                     <AiFillGithub size={20}/>
                   </a>
