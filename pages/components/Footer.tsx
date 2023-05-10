@@ -32,9 +32,9 @@ export default function Footer() {
         </div>
         <div className="mt-8 w-fit flex flex-row mx-auto md:order-1 md:mt-0">
           <span className="text-lg text-gray-500"> Made with </span>
-          <span className='text-xl'>''{redHeartEmoji}''</span>
+          <span className='text-xl'> {`-`}{redHeartEmoji}{`-`}</span>
           <span className="text-lg text-gray-500">
-            by some</span>   <span className='text-xl'>''{chickenEmoji}</span>
+            by some</span>   {`-`}<span className='text-xl'>{chickenEmoji}</span>
           <span className="text-lg text-gray-500">s</span>
         </div>
       </div>

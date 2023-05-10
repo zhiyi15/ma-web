@@ -7,6 +7,7 @@ import Download from './components/Download'
 import Footer from './components/Footer'
 import { Link } from 'react-scroll/modules'
 import { AiFillGithub } from 'react-icons/ai'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Features', to: 'features', offset: 0 },
@@ -25,7 +26,7 @@ export default function Home() {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Middle-Aware</span>
-                <img
+                <Image
                   className="h-16 w-auto"
                   src="./logo.svg"
                   alt="Logo"
@@ -68,10 +69,12 @@ export default function Home() {
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Middle-Aware</span>
 
-                  <img
+                  <Image
                     className="h-10 w-auto"
                     src="./logo.svg"
                     alt="Logo"
+                    width={2000}
+                    height={200}
                   />
                    
                 </a>
@@ -129,7 +132,7 @@ export default function Home() {
                   Middle-Aware
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  A tool to  gain insights into clients request to endpoints and the data's path through express middleware.
+                  {`A tool to  gain insights into clients request to endpoints and the data's path through express middleware.`}
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Link
@@ -143,8 +146,8 @@ export default function Home() {
               </div>
               <div className="mt-16 flow-root sm:mt-24">
                 <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                  <img
-                    src="./shot.png"
+                  <Image
+                    src="/shot.png"
                     alt="App screenshot"
                     width={2000}
                     height={400}

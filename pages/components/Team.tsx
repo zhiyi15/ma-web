@@ -1,38 +1,39 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import Image from 'next/image'
 
 const people = [
   {
     name: 'Felix Leclerc, Jr.',
     role: 'Full Stack Engineer',
-    imageUrl: './felix.jpeg',
+    imageUrl: '/felix.jpeg',
     linkedinUrl: 'https://www.linkedin.com/in/FelixLec',
     githubUrl: 'https://github.com/FelixLJR',
   },
   {
     name: 'Jason Breen',
     role: 'Full Stack Engineer',
-    imageUrl: './jason.png',
+    imageUrl: '/jason.png',
     linkedinUrl: 'https://linkedin.com/in/jasonbreen/',
     githubUrl: 'https://github.com/jason-breen',
   },
   {
     name: 'Zhiyi Huang',
     role: 'Full Stack Engineer',
-    imageUrl: './zhiyi.png',
+    imageUrl: '/zhiyi.png',
     linkedinUrl: 'http://www.linkedin.com/in/zhyhuang',
     githubUrl: 'https://github.com/zhiyi15',
   },
   {
     name: 'Tim Chang',
     role: 'Full Stack Engineer',
-    imageUrl: './tim.jpg',
+    imageUrl: '/tim.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/timchang87/',
     githubUrl: 'https://github.com/timchang87',
   },
   {
     name: 'Justin Marchant',
     role: 'Full Stack Engineer',
-    imageUrl: './justin.png',
+    imageUrl: '/justin.png',
     linkedinUrl: 'https://www.linkedin.com/in/justinwmarchant/',
     githubUrl: 'https://github.com/justinwmarchant',
   },
@@ -57,7 +58,7 @@ export default function Team() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="Engineer" />
+              <Image className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="Engineer" height ={200} width={400} />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
               <p className="text-base leading-7 text-gray-600">{person.role}</p>
               <ul role="list" className="mt-6 flex gap-x-6">

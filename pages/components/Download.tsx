@@ -1,17 +1,19 @@
 import { BsApple, BsUbuntu, BsWindows } from 'react-icons/bs'
+import Image from 'next/image'
 
 export default function Download() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-6 sm:py-10 lg:flex lg:items-center lg:justify-between lg:px-8">
 
-        <img
+        <Image
           className="h-72 w-auto rounded-lg"
-          src="./shot2.png"
+          src="/shot2.png"
           alt="Screenshot"
           width={2000}
           height={2000}
         />
+
         <h2 className="text-3xl font-bold tracking-tight pt-5 text-gray-900 sm:text-4xl">
           Always Free, 
           <br />
@@ -43,6 +45,6 @@ export default function Download() {
           </a>
         </div>
       </div>
-    </div>
+           </div>
   )
 }
