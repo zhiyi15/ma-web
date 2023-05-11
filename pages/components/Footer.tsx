@@ -11,7 +11,7 @@ const navigation = [
         />
       </svg>
     ),
-  },
+  }
 ]
 
 const chickenEmoji = '\u{1F414}'

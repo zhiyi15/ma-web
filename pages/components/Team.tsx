@@ -19,7 +19,7 @@ const people = [
   {
     name: 'Zhiyi Huang',
     role: 'Full Stack Engineer',
-    imageUrl: '/zhiyi.png',
+    imageUrl: '/zhiyi2.png',
     linkedinUrl: 'http://www.linkedin.com/in/zhyhuang',
     githubUrl: 'https://github.com/zhiyi15',
   },
@@ -33,7 +33,7 @@ const people = [
   {
     name: 'Justin Marchant',
     role: 'Full Stack Engineer',
-    imageUrl: '/justin.png',
+    imageUrl: '/justin1.png',
     linkedinUrl: 'https://www.linkedin.com/in/justinwmarchant/',
     githubUrl: 'https://github.com/justinwmarchant',
   },
