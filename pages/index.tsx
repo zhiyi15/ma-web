@@ -58,7 +58,7 @@ export default function Home() {
             {/* Fork me on github */}
             <div className='hidden lg:block lg:absolute lg:top-0 lg:right-0'>
               <a href="https://github.com/oslabs-beta/middle-aware">
-                <img decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" />
+                <Image decoding="async" loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" />
               </a>
             </div>
           </nav>
