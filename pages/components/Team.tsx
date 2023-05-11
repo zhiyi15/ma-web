@@ -33,7 +33,7 @@ const people = [
   {
     name: 'Justin Marchant',
     role: 'Full Stack Engineer',
-    imageUrl: '/justin1.png',
+    imageUrl: '/justinM1.png',
     linkedinUrl: 'https://www.linkedin.com/in/justinwmarchant/',
     githubUrl: 'https://github.com/justinwmarchant',
   },
