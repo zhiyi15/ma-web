@@ -5,6 +5,7 @@ import Team from './components/Team'
 import Features from './components/Features'
 import Download from './components/Download'
 import Footer from './components/Footer'
+import Stacks from './components/Stacks'
 import { Link } from 'react-scroll/modules'
 import { AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
@@ -180,6 +181,9 @@ export default function Home() {
       </div>
       <div id='team'>
         <Team />
+      </div>
+      <div id='stacks'>
+        <Stacks/>
       </div>
       <Footer />
     </>
