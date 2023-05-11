@@ -61,3 +61,5 @@ export default function Stack() {
   </div>
  )
 }
+
+// md selector centered.

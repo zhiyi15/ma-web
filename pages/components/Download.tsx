@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Download() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-6 sm:py-10 lg:flex lg:items-center lg:justify-between lg:px-8">
+    <div className="bg-white md:items-center md:justify-between ">
+      <div className="mx-auto max-w-7xl px-6 py-6 sm:py-10 md:flex lg:flex lg:items-center lg:justify-between lg:px-8">
 
         <Image
           className="h-72 w-auto rounded-lg"
