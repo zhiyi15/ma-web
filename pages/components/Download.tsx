@@ -25,8 +25,8 @@ export default function Download() {
 
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
           <a
-            href="./middle-aware-1.0.0.dmg"
-            download='middle-aware-1.0.0.dmg'
+            href="./middle-aware-1.0.0-arm64.dmg"
+            download='middle-aware-1.0.0-arm64.dmg'
             className="rounded-md bg-[#06d6a0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#06d69ec9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
          <BsApple size={30}/>
