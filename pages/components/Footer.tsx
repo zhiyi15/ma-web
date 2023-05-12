@@ -8,12 +8,12 @@ const navigation = [
   },
   {
     name: 'Medium',
-    href: 'https://medium.com/',
+    href: 'https://medium.com/@marchantjustinw/introducing-middle-aware-a-call-stack-visualizer-for-express-developers-798073951d83',
     icon: BsMedium
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/',
+    href: 'https://www.linkedin.com/company/middle-aware/about/',
     icon: BsLinkedin
   }
 ]
