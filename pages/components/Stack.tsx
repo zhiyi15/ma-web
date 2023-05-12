@@ -36,7 +36,7 @@ const techStack = [
  },
  {
   name: 'mongoose',
-  logoUrl: '/mongoose.png'
+  logoUrl: '/mgsedb.png'
  }
 ]
 
