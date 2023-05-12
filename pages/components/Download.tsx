@@ -8,7 +8,7 @@ export default function Download() {
 
         <Image
           className="h-72 w-auto rounded-lg"
-          src="/shot2.png"
+          src="/shot3.png"
           alt="Screenshot"
           width={2000}
           height={2000}
