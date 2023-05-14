@@ -19,14 +19,19 @@ export default function Download() {
           <br />
           Always Open Source,
           <br />
-          Download today!
+          Coming Soon!
         </h2>
 
 
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-          <a
+          {/* <a
             className="rounded-md bg-[#06d6a0] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#06d69ec9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          > */}
+          <a
+            // href=""
+            className=" rounded-md bg-[#06d69e55] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#06d69e55] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
+
          <BsApple size={30}/>
           </a>
           <a
